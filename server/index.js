@@ -10,10 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    user:'root',
-    host: 'localhost',
-    password: 'password',
-    database: 'passwordmanager',
+    user:'', /*Your SQL username*/ 
+    host: '', /*Your SQL host*/ 
+    password: '', /*Your SQL paswword*/ 
+    database: '', /*Your SQL database name*/ 
 })
 
 app.post("/addpassword", (req, res) => {
